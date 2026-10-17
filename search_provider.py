@@ -54,7 +54,6 @@ class ParallelSearch:
                     headers={"User-Agent": USER_AGENT},
                     timeout=self.timeout,
                     follow_redirects=True,
-                    trust_env=False,
                 ) as client:
                     async with streamable_http_client(
                         MCP_URL, http_client=client
